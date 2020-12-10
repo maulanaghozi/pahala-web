@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="24" viewBox="0 0 25 24">
+    <defs>
+        <path id="v9u2405csa" d="M9.33 11.5h2.17c2.485 0 4.5 2.015 4.5 4.5H8.999L9 17h8v-1c-.003-1.064-.31-2.105-.886-3H19c1.93 0 3.687 1.109 4.516 2.851C21.151 18.972 17.322 21 13 21c-2.761 0-5.1-.59-7-1.625v-9.304c1.217.174 2.365.667 3.33 1.429zM4 9c.507 0 .934.38.993.883L5 10v9c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1v-9c0-.552.448-1 1-1h2zm9.646-5.425L14 3.93l.354-.354c.63-.636 1.554-.886 2.42-.655.865.23 1.54.906 1.771 1.772.23.866-.02 1.788-.656 2.419L14 11l-3.89-3.89c-.636-.63-.886-1.554-.655-2.42.23-.865.906-1.54 1.772-1.771.866-.23 1.788.02 2.419.656z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <path d="M0 0L24 0 24 24 0 24z" transform="translate(-25 -2178) translate(0 2159) translate(25 19) translate(1)"/>
+                        <g fill-rule="nonzero" transform="translate(-25 -2178) translate(0 2159) translate(25 19) translate(1)">
+                            <use fill="#64AC10" xlink:href="#v9u2405csa"/>
+                            <use fill="#ED3833" xlink:href="#v9u2405csa"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
