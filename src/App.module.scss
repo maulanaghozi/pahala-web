@@ -1,0 +1,77 @@
+@import "src/styles/variable";
+@import "src/styles/mixin";
+@import "src/styles/function";
+// @import 'src/styles/bs/bootstrap-grid';
+
+/**
+ * Global Variable
+ */
+
+$sidebar-width-extra-small: 160px;
+$sidebar-width-small: 180px;
+$sidebar-width-medium: 200px;
+$sidebar-width-large: 220px;
+$sidebar-width-extra-large: 240px;
+
+$sidebar-open-width: 15rem;
+$sidebar-closed-width: 4rem;
+
+/**
+ * Root Style
+ */
+html,
+body {
+  @include respond-to(xs) {
+    font-size: 12px;
+  }
+  @include respond-to(sm) {
+    font-size: 13px;
+  }
+  @include respond-to(md) {
+    font-size: 14px;
+  }
+  @include respond-to(lg) {
+    font-size: 15px;
+  }
+  @include respond-to(xl) {
+    font-size: 16px;
+  }
+}
+
+.container {
+  background-color: lightgray;
+}
+
+.wrapper {
+  width: 420px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+
+  .list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 0;
+
+    span {
+      width: 25px;
+      height: 25px;
+      margin-right: 15px;
+      background-color: $light-green;
+      padding: 2px 10px;
+      color: $dark-green;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 !important;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box !important;
+}
