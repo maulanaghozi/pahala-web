@@ -1,0 +1,82 @@
+@import "src/styles/variable";
+@import "src/styles/mixin";
+@import "src/styles/function";
+
+.container {
+  background-color: lightgray;
+}
+
+.wrapper {
+  width: 370px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  > p {
+    font-size: 12px;
+  }
+
+  .list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 0;
+
+    svg {
+      margin-right: 15px;
+      height: 25px;
+      width: 25px;
+    }
+
+    span {
+      width: 25px;
+      height: 25px;
+      margin-right: 15px;
+      background-color: $light-green;
+      padding: 2px 10px;
+      color: $dark-green;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 !important;
+      width: 290px;
+      font-size: 14px;
+    }
+  }
+
+  .note {
+    padding: 14px 15px;
+    border-radius: 10px;
+    background-color: $background-note;
+    margin-top: 35px;
+
+    p {
+      color: $black;
+      font-size: 12px;
+      line-height: 18px;
+      height: 48px;
+      width: 300px;
+    }
+  }
+
+  > button {
+    width: 335px;
+    height: 44px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+}
