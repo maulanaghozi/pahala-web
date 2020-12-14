@@ -1,0 +1,34 @@
+@import "../../../styles/variable";
+@import "../../../styles/mixin";
+@import "../../../styles/function";
+
+.titleSection {
+  font-size: 16px;
+}
+
+.banner {
+  position: relative;
+  width: 335px;
+  height: 200px;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .thumbnail {
+    width: 335px;
+    height: 180px;
+    background-color: orange;
+  }
+
+  .dotWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .dot {
+      background-color: $primary-color;
+    }
+  }
+}
