@@ -14,6 +14,7 @@ import { ReactComponent as pahalaExpress } from "./icons/pahala-express.svg";
 import { ReactComponent as redCross } from "./icons/red-cross.svg";
 import { ReactComponent as redPlus } from "./icons/red-plus.svg";
 import { ReactComponent as whatsapp } from "./icons/whatsapp.svg";
+import { ReactComponent as notification } from "./icons/notification.svg";
 
 export const IconApple = apple;
 export const IconBlackCross = blackCross;
@@ -31,3 +32,4 @@ export const IconPahalaExpress = pahalaExpress;
 export const IconRedCross = redCross;
 export const IconRedPlus = redPlus;
 export const IconWhatsapp = whatsapp;
+export const IconNotification = notification;
