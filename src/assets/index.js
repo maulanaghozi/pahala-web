@@ -19,6 +19,8 @@ import { ReactComponent as back } from "./icons/back.svg";
 import { ReactComponent as help } from "./icons/help.svg";
 import { ReactComponent as paper } from "./icons/paper.svg";
 import { ReactComponent as redMail } from "./icons/red-mail.svg";
+import { ReactComponent as editImage } from "./icons/edit-image.svg";
+import { ReactComponent as defaultProfile } from "./icons/default-profile.svg";
 
 export const IconApple = apple;
 export const IconBlackCross = blackCross;
@@ -41,3 +43,5 @@ export const IconBack = back;
 export const IconHelp = help;
 export const IconPaper = paper;
 export const IconRedMail = redMail;
+export const IconEditImage = editImage;
+export const DefaultProfile = defaultProfile;
