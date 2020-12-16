@@ -1,0 +1,29 @@
+@import "../../styles/function";
+@import "../../styles/mixin";
+@import "../../styles/variable";
+
+.container {
+  width: 335px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: $black;
+  font-size: 14px;
+  border: 1px solid $border;
+  outline: none;
+  cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  svg {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+}

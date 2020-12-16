@@ -1,0 +1,17 @@
+@import "src/styles/function";
+@import "src/styles/mixin";
+@import "src/styles/variable";
+
+.container {
+  width: 335px;
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+}

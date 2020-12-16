@@ -15,6 +15,10 @@ import { ReactComponent as redCross } from "./icons/red-cross.svg";
 import { ReactComponent as redPlus } from "./icons/red-plus.svg";
 import { ReactComponent as whatsapp } from "./icons/whatsapp.svg";
 import { ReactComponent as notification } from "./icons/notification.svg";
+import { ReactComponent as back } from "./icons/back.svg";
+import { ReactComponent as help } from "./icons/help.svg";
+import { ReactComponent as paper } from "./icons/paper.svg";
+import { ReactComponent as redMail } from "./icons/red-mail.svg";
 
 export const IconApple = apple;
 export const IconBlackCross = blackCross;
@@ -33,3 +37,7 @@ export const IconRedCross = redCross;
 export const IconRedPlus = redPlus;
 export const IconWhatsapp = whatsapp;
 export const IconNotification = notification;
+export const IconBack = back;
+export const IconHelp = help;
+export const IconPaper = paper;
+export const IconRedMail = redMail;

@@ -46,6 +46,11 @@
       text-decoration: none;
       margin-top: 5px;
       cursor: pointer;
+
+      &.red {
+        color: $primary-color;
+        font-weight: bold;
+      }
     }
   }
 }
