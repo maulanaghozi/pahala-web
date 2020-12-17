@@ -1,13 +1,15 @@
 import React from "react";
-import PageTitle from "../../components/pageTitle/pageTitle";
-import ColektifButtonLogin from "./components/colektifButtonLogin";
+import ProfileInfo from "./components/profileInfo";
+import LongButton from "../../components/longButton/longButton";
+import Footer from "./components/footerProfile";
 import style from "./profile.module.scss";
 
 export default function Profile(props) {
   return (
     <div className={style.container}>
-      <PageTitle title={"Login"} returnable={false} />
-      <ColektifButtonLogin />
+      <ProfileInfo />
+      <LongButton text={"Edit Profile"} className={style.buttonEditProfile} />
+      <Footer />
     </div>
   );
 }

@@ -75,3 +75,49 @@
     }
   }
 }
+
+.profileInfo_wrapper {
+  display: flex;
+  align-items: center;
+
+  .profilePic {
+    width: 73px;
+    height: 73px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .info_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 73px;
+
+    .name {
+      color: #121212;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .email {
+      color: #333333;
+      font-size: 12px;
+    }
+
+    .verified {
+      display: flex;
+      align-items: center;
+
+      > span {
+        color: $primary-color;
+        font-size: 12px;
+      }
+
+      > svg {
+        margin-left: 7px;
+      }
+    }
+  }
+}

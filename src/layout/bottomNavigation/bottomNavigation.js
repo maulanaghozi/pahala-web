@@ -1,14 +1,14 @@
-import React, { useState } from "react"
-import classNames from "classnames"
-import { NavLink } from "react-router-dom"
-import style from "./bottomNavigation.module.scss"
+import React, { useState } from "react";
+import classNames from "classnames";
+import { NavLink } from "react-router-dom";
+import style from "./bottomNavigation.module.scss";
 import {
   text_container,
   link,
   selected,
   text,
   icon,
-} from "./bottomNavigation.module.scss"
+} from "./bottomNavigation.module.scss";
 
 import {
   IconHome,
@@ -21,7 +21,7 @@ import {
   IconProfileSelected,
   IconRedPlus,
   IconBlackCross,
-} from "../../assets"
+} from "../../assets";
 
 export default function BottomNavigation(props) {
   const navigation = (text, path, icon, selectedIcon) => {
@@ -30,8 +30,8 @@ export default function BottomNavigation(props) {
       path: path,
       Icon: icon,
       SelectedIcon: selectedIcon,
-    }
-  }
+    };
+  };
 
   const nav = [
     navigation("Bantu", "/home", IconHome, IconHomeSelected),
@@ -43,8 +43,8 @@ export default function BottomNavigation(props) {
       IconBlackCross
     ),
     navigation("Update", "/update", IconUpdate, IconUpdateSelected),
-    navigation("Login", "/login", IconProfile, IconProfileSelected),
-  ]
+    navigation("Profile", "/profile", IconProfile, IconProfileSelected),
+  ];
 
   return (
     <div className={style.container}>
@@ -61,11 +61,11 @@ export default function BottomNavigation(props) {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 function SidebarNav(props) {
-  const [isSelected, setIsSelected] = useState(false)
+  const [isSelected, setIsSelected] = useState(false);
 
   return (
     <NavLink
@@ -74,12 +74,12 @@ function SidebarNav(props) {
       to={props.to}
       isActive={(match, location) => {
         if (!match) {
-          setIsSelected(false)
-          return false
+          setIsSelected(false);
+          return false;
         }
 
-        setIsSelected(true)
-        return true
+        setIsSelected(true);
+        return true;
       }}
     >
       <div
@@ -97,5 +97,5 @@ function SidebarNav(props) {
         </span>
       </div>
     </NavLink>
-  )
+  );
 }

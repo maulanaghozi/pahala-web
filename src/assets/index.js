@@ -25,6 +25,7 @@ import { ReactComponent as blackMail } from "./icons/black-mail.svg";
 import { ReactComponent as eyeOff } from "./icons/eye-off.svg";
 import { ReactComponent as eyeOn } from "./icons/eye-on.svg";
 import { ReactComponent as lock } from "./icons/lock.svg";
+import { ReactComponent as verified } from "./icons/verified.svg";
 
 export const IconApple = apple;
 export const IconBlackCross = blackCross;
@@ -53,3 +54,4 @@ export const IconBlackMail = blackMail;
 export const IconEyeOn = eyeOn;
 export const IconEyeOff = eyeOff;
 export const IconLock = lock;
+export const IconVerified = verified;
