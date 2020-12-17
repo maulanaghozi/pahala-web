@@ -1,0 +1,17 @@
+@import "../../styles/function";
+@import "../../styles/mixin";
+@import "../../styles/variable";
+
+.button {
+  width: 335px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: $primary-color;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+}

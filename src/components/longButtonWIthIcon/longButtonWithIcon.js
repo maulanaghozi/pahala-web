@@ -8,6 +8,9 @@ export default function LongButtonWithIcon(props) {
       className={classNames(style.container, {
         [props.className]: props.className,
       })}
+      onClick={() => {
+        if (props.onClick) props.onClick();
+      }}
     >
       <props.icon width={20} height={20} />
       <span>{props.text}</span>

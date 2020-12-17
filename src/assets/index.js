@@ -21,6 +21,10 @@ import { ReactComponent as paper } from "./icons/paper.svg";
 import { ReactComponent as redMail } from "./icons/red-mail.svg";
 import { ReactComponent as editImage } from "./icons/edit-image.svg";
 import { ReactComponent as defaultProfile } from "./icons/default-profile.svg";
+import { ReactComponent as blackMail } from "./icons/black-mail.svg";
+import { ReactComponent as eyeOff } from "./icons/eye-off.svg";
+import { ReactComponent as eyeOn } from "./icons/eye-on.svg";
+import { ReactComponent as lock } from "./icons/lock.svg";
 
 export const IconApple = apple;
 export const IconBlackCross = blackCross;
@@ -45,3 +49,7 @@ export const IconPaper = paper;
 export const IconRedMail = redMail;
 export const IconEditImage = editImage;
 export const DefaultProfile = defaultProfile;
+export const IconBlackMail = blackMail;
+export const IconEyeOn = eyeOn;
+export const IconEyeOff = eyeOff;
+export const IconLock = lock;

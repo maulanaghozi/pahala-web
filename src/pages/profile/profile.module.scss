@@ -5,6 +5,17 @@
 .container {
   width: 335px;
 
+  .text_confirmation {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .link_daftar {
+    color: $primary-color;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
   .header {
     width: 100%;
     display: flex;
