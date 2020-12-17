@@ -5,3 +5,35 @@
 .container {
   width: 335px;
 }
+
+.line {
+  width: 335px;
+  height: 1px;
+  margin: 30px 0;
+  border: solid 1px #eaeaea;
+}
+
+.text_confirmation {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.link_daftar {
+  color: $primary-color;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn_daftar {
+  margin-bottom: 20px;
+}
+
+.align_center {
+  display: flex;
+  justify-content: center;
+
+  > span {
+    font-size: 18px;
+    color: #333333;
+  }
+}

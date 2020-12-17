@@ -1,0 +1,12 @@
+@import "src/styles/variable";
+@import "src/styles/mixin";
+@import "src/styles/function";
+
+.container {
+  position: relative;
+  width: 370px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+}

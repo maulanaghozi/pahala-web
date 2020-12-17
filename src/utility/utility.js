@@ -1,6 +1,6 @@
 import moment from "moment";
 import decode from "jwt-decode";
-import {} from "../assets";
+import { DefaultProfile } from "../assets";
 
 export const formatNumber = (num) => {
   return String(num).replace(/(.)(?=(\d{3})+$)/g, "$1.");
@@ -98,6 +98,6 @@ export const getProfilePic = (url) => {
   if (fiveInitialCharacters === "https") {
     return url;
   } else {
-    return defaultProfilePic;
+    return DefaultProfile;
   }
 };

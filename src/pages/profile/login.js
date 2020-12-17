@@ -3,6 +3,7 @@ import PageTitle from "../../components/pageTitle/pageTitle";
 import ColektifButtonLogin from "./components/colektifButtonLogin";
 import LoginManual from "./components/loginManual";
 import Footer from "./components/footerProfile";
+import { Link } from "react-router-dom";
 import style from "./profile.module.scss";
 
 export default function Login(props) {
@@ -16,7 +17,10 @@ export default function Login(props) {
         <ColektifButtonLogin setIsLoginManual={setIsLoginManual} />
       )}
       <span className={style.text_confirmation}>
-        Belum punya akun? <span className={style.link_daftar}>Daftar</span>
+        Belum punya akun?{" "}
+        <Link to={"/register"} className={style.link_daftar}>
+          Daftar
+        </Link>
       </span>
       <Footer />
     </div>

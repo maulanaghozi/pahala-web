@@ -31,7 +31,6 @@
 }
 
 .loginManualWrapper {
-  margin-top: 20px;
   margin-bottom: 30px;
 
   .text_container {
@@ -50,6 +49,7 @@
 }
 
 .InputForm_wrapper {
+  margin-top: 20px;
   border: 1px solid #d7d7d7;
   border-radius: 10px;
   form {
@@ -68,7 +68,7 @@
     }
 
     .line {
-      width: 335px;
+      width: 100%;
       height: 2px;
       border: solid 1px #d7d7d7;
       margin: 0;
