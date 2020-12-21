@@ -27,6 +27,9 @@ import { ReactComponent as eyeOn } from "./icons/eye-on.svg";
 import { ReactComponent as lock } from "./icons/lock.svg";
 import { ReactComponent as verified } from "./icons/verified.svg";
 import { ReactComponent as logout } from "./icons/logout.svg";
+import { ReactComponent as permohonan } from "./icons/permohonan.svg";
+import { ReactComponent as membantu } from "./icons/membantu.svg";
+import { ReactComponent as toa } from "./icons/toa.svg";
 
 //image
 import defaultProfilePng from "./images/default-profile.png";
@@ -61,3 +64,6 @@ export const IconLock = lock;
 export const IconVerified = verified;
 export const DefaultProfilePng = defaultProfilePng;
 export const IconLogout = logout;
+export const IconPermohonan = permohonan;
+export const IconMembantu = membantu;
+export const IconToa = toa;

@@ -1,0 +1,9 @@
+@import "src/styles/function";
+@import "src/styles/mixin";
+@import "src/styles/variable";
+
+.button {
+  color: $primary-color;
+  background-color: #ffffff;
+  border: 1px solid $primary-color;
+}
