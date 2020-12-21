@@ -9,7 +9,7 @@ export default function Profile(props) {
     <div className={style.container}>
       <ProfileInfo />
       <LongButton text={"Edit Profile"} className={style.buttonEditProfile} />
-      <Footer />
+      <Footer isLogoutVisible={true} />
     </div>
   );
 }

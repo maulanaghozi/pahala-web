@@ -26,6 +26,10 @@ import { ReactComponent as eyeOff } from "./icons/eye-off.svg";
 import { ReactComponent as eyeOn } from "./icons/eye-on.svg";
 import { ReactComponent as lock } from "./icons/lock.svg";
 import { ReactComponent as verified } from "./icons/verified.svg";
+import { ReactComponent as logout } from "./icons/logout.svg";
+
+//image
+import defaultProfilePng from "./images/default-profile.png";
 
 export const IconApple = apple;
 export const IconBlackCross = blackCross;
@@ -55,3 +59,5 @@ export const IconEyeOn = eyeOn;
 export const IconEyeOff = eyeOff;
 export const IconLock = lock;
 export const IconVerified = verified;
+export const DefaultProfilePng = defaultProfilePng;
+export const IconLogout = logout;

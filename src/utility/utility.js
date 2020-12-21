@@ -1,6 +1,6 @@
 import moment from "moment";
 import decode from "jwt-decode";
-import { DefaultProfile } from "../assets";
+import { DefaultProfilePng } from "../assets";
 
 export const formatNumber = (num) => {
   return String(num).replace(/(.)(?=(\d{3})+$)/g, "$1.");
@@ -17,19 +17,6 @@ export const capitalize = (word) =>
     .split(" ")
     .map((str) => str.charAt(0).toUpperCase() + str.substring(1))
     .join(" ");
-
-export const pathToArray = (path) => {
-  const pathArray = path.split("/");
-  let newPathArray = [];
-
-  pathArray.forEach((path) => {
-    if (path) {
-      const stringWithSpace = replaceAndModify(path, "-", " ", capitalize);
-      newPathArray.push(stringWithSpace);
-    }
-  });
-  return newPathArray;
-};
 
 export const hasToken = () => {
   return !!localStorage.getItem("kestingrum-web");
@@ -91,13 +78,13 @@ export const cekVideoUrl = (url) => {
 
 export const getProfilePic = (url) => {
   let fiveInitialCharacters;
-  if (url) {
+  if (url && typeof url === "string" && url.length > 5) {
     fiveInitialCharacters = url.slice(0, 5);
   }
 
   if (fiveInitialCharacters === "https") {
     return url;
   } else {
-    return DefaultProfile;
+    return DefaultProfilePng;
   }
 };
