@@ -9,8 +9,11 @@
   background-color: #ffffff;
 
   .wrapper {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 

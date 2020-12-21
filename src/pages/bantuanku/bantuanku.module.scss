@@ -7,3 +7,24 @@
   background-color: #ffffff;
   border: 1px solid $primary-color;
 }
+
+.icon {
+  margin: 50px 0;
+}
+
+.primaryText {
+  text-align: center;
+  color: #333333;
+  font-size: 18px;
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.secondaryText {
+  text-align: center;
+  color: #575757;
+  font-size: 14px;
+  width: 100%;
+  line-height: 21px;
+}
