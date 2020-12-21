@@ -8,11 +8,14 @@ import { IconMembantu, IconPermohonan } from "../../assets";
 export default function Bantuanku(props) {
   return (
     <div>
-      <TopNavigation>
+      <TopNavigation
+        text={["Permohonan", "Membantu"]}
+        path={["/bantuanku/permohonan", "/bantuanku/membantu"]}
+      >
         <>
           <Switch>
-            <Route path={"/bantuanku/permohonan"} component={Perkembanganku} />
-            <Route path={"/bantuanku/membantu"} component={Terkini} />
+            <Route path={"/bantuanku/permohonan"} component={Permohonan} />
+            <Route path={"/bantuanku/membantu"} component={Membantu} />
             <Route
               path={"/bantuanku"}
               render={() => <Redirect to={"/bantuanku/permohonan"} />}
@@ -24,7 +27,7 @@ export default function Bantuanku(props) {
   );
 }
 
-const Perkembanganku = () => {
+const Permohonan = () => {
   return (
     <>
       <IconPermohonan className={style.icon} />
@@ -37,7 +40,7 @@ const Perkembanganku = () => {
   );
 };
 
-const Terkini = () => {
+const Membantu = () => {
   return (
     <>
       <IconMembantu className={style.icon} />

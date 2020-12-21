@@ -10,24 +10,14 @@ import {
 } from "./topNavigation.module.scss";
 
 export default function TopNavigation(props) {
-  const navigation = (text, path) => {
-    return {
-      text: text,
-      path: path,
-    };
-  };
-
-  const nav = [
-    navigation("Permohonan", "/bantuanku/permohonan"),
-    navigation("Membantu", "/bantuanku/membantu"),
-  ];
-
   return (
     <div className={style.container}>
       <div className={style.topNav}>
-        {nav.map((param, i) => (
-          <Nav key={i} to={param.path} text={param.text} />
-        ))}
+        {Array.isArray(props.text) &&
+          Array.isArray(props.path) &&
+          props.text.map((param, i) => (
+            <Nav key={i} to={props.path[i]} text={param} />
+          ))}
       </div>
       <div className={style.wrapper}>{props.children}</div>
     </div>
