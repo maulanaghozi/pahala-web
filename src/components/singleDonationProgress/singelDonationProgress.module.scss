@@ -1,0 +1,60 @@
+@import "src/styles/variable";
+@import "src/styles/mixin";
+@import "src/styles/function";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 13px;
+
+  .progressContainer {
+    width: 235px;
+    .progressBarContainer {
+      width: 100%;
+      position: relative;
+      height: 7px;
+      .progressBar {
+        background-color: #d8d8d8;
+        height: 100%;
+        width: 100%;
+        border-radius: 3px;
+      }
+
+      .progressBarActive {
+        background-color: #ed3833;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 3px;
+        width: 20%;
+      }
+    }
+
+    .danaContainer {
+      margin-top: 5px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      > span {
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .terkumpul {
+        color: #ed3833;
+      }
+
+      .target {
+        color: #64ac10;
+      }
+    }
+  }
+
+  > span {
+    color: #939393;
+    font-size: 12px;
+    margin-top: -5px;
+  }
+}
