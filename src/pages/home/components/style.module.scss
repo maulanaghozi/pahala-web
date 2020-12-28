@@ -108,3 +108,85 @@
     }
   }
 }
+
+.perkembanganTerkiniContainer {
+  section {
+    display: flex;
+    padding-bottom: 10px;
+
+    .profilePicContainer {
+      margin-right: 15px;
+      width: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .profilePic {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .redLine {
+        background-color: #ed3833;
+        width: 1px;
+        flex: 1;
+      }
+    }
+
+    .cardConrtainer {
+      width: 285px;
+      height: 160px;
+      border-radius: 10px;
+      border: 1px solid #dedede;
+      padding: 12px;
+      margin-bottom: 10px;
+
+      > header {
+        .name {
+          color: #333333;
+          font-size: 12px;
+          font-weight: bold;
+        }
+
+        .dot {
+          color: #7f7f7f;
+          margin: 0 5px;
+        }
+
+        .timestamp {
+          color: #8e8e8e;
+          font-size: 12px;
+        }
+      }
+
+      > p {
+        color: #333333;
+        font-size: 12px;
+      }
+
+      > footer {
+        display: flex;
+        align-items: center;
+
+        > img {
+          width: 70px;
+          height: 44px;
+          border-radius: 5px;
+          margin-right: 10px;
+        }
+
+        > span {
+          color: #ed3833;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .button {
+    margin-top: 0;
+  }
+}

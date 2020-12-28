@@ -14,8 +14,12 @@ export default function Home() {
       <Section label={"Bantuan Mendesak"}>
         <BantuanMendesak />
       </Section>
-      <PerkembanganTerkini />
-      <ButuhBantuanTerkini />
+      <Section label={"Perkembangan Terkini"}>
+        <PerkembanganTerkini />
+      </Section>
+      <Section label={"Butuh Bantuan Terkini"}>
+        <ButuhBantuanTerkini />
+      </Section>
     </div>
   );
 }
