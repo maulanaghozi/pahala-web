@@ -1,13 +1,37 @@
 .container {
+  position: relative;
   width: 335px;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 
   .header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 20px;
+    z-index: 10;
+    background-color: #ffffff;
+    width: 335px;
+    padding-bottom: 20px;
 
     svg {
       cursor: pointer;
     }
   }
+
+  .section {
+    margin-top: 35px;
+    .label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.container::-webkit-scrollbar {
+  display: none;
 }

@@ -11,7 +11,9 @@ export default function Home() {
     <div className={style.container}>
       <HeaderHome />
       <Banner />
-      <BantuanMendesak />
+      <Section label={"Bantuan Mendesak"}>
+        <BantuanMendesak />
+      </Section>
       <PerkembanganTerkini />
       <ButuhBantuanTerkini />
     </div>
@@ -24,5 +26,14 @@ function HeaderHome() {
       <IconPahalaExpress />
       <IconNotification />
     </div>
+  );
+}
+
+function Section(props) {
+  return (
+    <section className={style.section}>
+      <div className={style.label}>{props.label}</div>
+      {props.children}
+    </section>
   );
 }

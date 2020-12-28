@@ -34,7 +34,7 @@ export default function Banner() {
 
   useEffect(() => {}, []);
 
-  const getActiveIndex = (index) => {
+  const getActiveIndex = index => {
     if (promoCount <= SLIDE_TO_SHOW) {
       return currentIndex % promoCount === index;
     } else {
@@ -42,7 +42,7 @@ export default function Banner() {
     }
   };
 
-  const Dots = (props) => {
+  const Dots = props => {
     return (
       <div className={classes.dots_container}>
         {result.map((promo, index) => {
@@ -73,7 +73,7 @@ export default function Banner() {
         xlarge: "(min-width: 1200.0001px)",
       }}
     >
-      {(matches) => {
+      {matches => {
         let height;
         let padding = 15;
         let promoWidth;
@@ -81,7 +81,7 @@ export default function Banner() {
 
         const getContainerWidth = (width, padding, num) =>
           width * num + padding * (num - 1);
-        const getPromoWidth = (height) => ASPECT_RATIO * height;
+        const getPromoWidth = height => ASPECT_RATIO * height;
 
         if (matches.xlarge) {
           height = 190;
@@ -90,32 +90,32 @@ export default function Banner() {
           promoWidth += "px";
           height += "px";
         } else if (matches.large) {
-          height = 170;
+          height = 190;
           promoWidth = getPromoWidth(height);
           containerWidth = getContainerWidth(335, padding, SLIDE_TO_SHOW);
           promoWidth += "px";
           height += "px";
         } else if (matches.medium) {
-          height = 145;
+          height = 190;
           promoWidth = getPromoWidth(height);
           containerWidth = getContainerWidth(335, padding, SLIDE_TO_SHOW);
           promoWidth += "px";
           height += "px";
         } else if (matches.small) {
-          height = 120;
+          height = 190;
           promoWidth = getPromoWidth(height);
           containerWidth = getContainerWidth(335, padding, SLIDE_TO_SHOW);
           promoWidth += "px";
           height += "px";
         } else {
           promoWidth = 335;
-          height = "30.16%";
+          height = 190;
           containerWidth = "100%";
         }
 
         if (result) {
           return (
-            <>
+            <div className={classes.banner}>
               <div className={classes.wrapper}>
                 <div
                   className={classes.container}
@@ -135,7 +135,7 @@ export default function Banner() {
                       }
                     }}
                   >
-                    {result.map((promo) => (
+                    {result.map(promo => (
                       <div key={promo.id}>
                         <Link to={"/promo/" + promo.id}>
                           <div
@@ -154,7 +154,7 @@ export default function Banner() {
                 </div>
               </div>
               <Dots />
-            </>
+            </div>
           );
         } else {
           return null;
