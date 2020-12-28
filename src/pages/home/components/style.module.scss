@@ -175,12 +175,14 @@
           height: 44px;
           border-radius: 5px;
           margin-right: 10px;
+          cursor: pointer;
         }
 
         > span {
           color: #ed3833;
           font-size: 12px;
           font-weight: bold;
+          cursor: pointer;
         }
       }
     }

@@ -30,6 +30,7 @@ import { ReactComponent as logout } from "./icons/logout.svg";
 import { ReactComponent as permohonan } from "./icons/permohonan.svg";
 import { ReactComponent as membantu } from "./icons/membantu.svg";
 import { ReactComponent as toa } from "./icons/toa.svg";
+import { ReactComponent as location } from "./icons/location.svg";
 
 //image
 import defaultProfilePng from "./images/default-profile.png";
@@ -67,3 +68,4 @@ export const IconLogout = logout;
 export const IconPermohonan = permohonan;
 export const IconMembantu = membantu;
 export const IconToa = toa;
+export const IconLocation = location;
