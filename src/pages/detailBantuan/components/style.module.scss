@@ -94,3 +94,123 @@
     }
   }
 }
+
+.pemohonBantuanContainer {
+  background-color: #f2f7ed;
+  width: 335px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+
+  > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      color: #ed3833;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      > svg {
+        margin-left: 6px;
+      }
+    }
+
+    .verificationNote {
+      font-size: 12px;
+      color: #626262;
+    }
+  }
+}
+
+.ceritaContainer {
+  width: 100%;
+  margin-bottom: 25px;
+
+  p {
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  img {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+.infoUpdateTerbaruContainer {
+  margin-bottom: 15px;
+  section {
+    display: flex;
+    padding-bottom: 10px;
+
+    .profilePicContainer {
+      margin-right: 15px;
+      width: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .profilePic {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .redLine {
+        background-color: #ed3833;
+        width: 1px;
+        flex: 1;
+      }
+    }
+
+    .cardConrtainer {
+      width: 285px;
+      margin-bottom: 10px;
+
+      > header {
+        .name {
+          color: #333333;
+          font-size: 12px;
+          font-weight: bold;
+        }
+
+        .dot {
+          color: #7f7f7f;
+          margin: 0 5px;
+        }
+
+        .timestamp {
+          color: #8e8e8e;
+          font-size: 12px;
+        }
+      }
+
+      > p {
+        color: #333333;
+        font-size: 12px;
+      }
+
+      > img {
+        width: 260px;
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

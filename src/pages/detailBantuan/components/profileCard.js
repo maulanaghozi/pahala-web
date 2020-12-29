@@ -4,7 +4,7 @@ import { IconVerified } from "../../../assets";
 
 export default function PemohonBantuan(props) {
   return (
-    <div className={style.pemohonBantuanContainer}>
+    <div className={style.pemohonBantuanContainer} style={props.style}>
       <img
         src={
           "https://cdn3.f-cdn.com/contestentries/1376995/30494909/5b566bc71d308_thumb900.jpg"

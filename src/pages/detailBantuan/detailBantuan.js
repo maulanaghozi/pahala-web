@@ -3,6 +3,12 @@ import Wrapper from "../../layout/wrapper/wrapper";
 import MultipleThumbnail from "../../components/multipleThumbnail/multipleThumbnail";
 import TopInformation from "./components/topInformation";
 import ProgressDana from "./components/progressDana";
+import PemohonBantuan from "./components/pemohonBantuan";
+import Cerita from "./components/cerita";
+import RencanaTarget from "./components/rencanaTarget";
+import InfoUpdateTerbaru from "./components/infoUpdateTerbaru";
+import Donatur from "./components/donatur";
+import LongButton from "../../components/longButton/longButton";
 import style from "./detailBantuan.module.scss";
 
 const images = [
@@ -35,7 +41,22 @@ export default function DetailBantuan(props) {
       <main>
         <TopInformation />
         <ProgressDana />
-        <Section label={"Pemohon Bantuan"}></Section>
+        <Section label={"Pemohon Bantuan"}>
+          <PemohonBantuan />
+        </Section>
+        <Section label={"Cerita"}>
+          <Cerita />
+        </Section>
+        <Section label={"Rencana Target"}>
+          <RencanaTarget />
+        </Section>
+        <Section label={"Info Update Terbaru"}>
+          <InfoUpdateTerbaru />
+        </Section>
+        <Section label={"Donatur (864)"}>
+          <Donatur />
+        </Section>
+        <LongButton text={"Bantu Sekarang"} />
       </main>
     </Wrapper>
   );
