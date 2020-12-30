@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from "./style.module.scss";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 import SingleDonationProgress from "../../../components/singleDonationProgress/singelDonationProgress";
 
 export default function ButuhBantuanTerkini(props) {
@@ -38,14 +39,18 @@ function CategoryNavigation() {
 function Card(props) {
   return (
     <div className={style.cardContainer}>
-      <img
-        src={"https://www.ajnn.net/files/images/20191205-fuqara.jpg"}
-        alt={"pembangunan"}
-      />
+      <Link to={"/pahala-bantu"}>
+        <img
+          src={"https://www.ajnn.net/files/images/20191205-fuqara.jpg"}
+          alt={"pembangunan"}
+        />
+      </Link>
       <section>
-        <span className={style.title}>
-          Pahala Express Bantu Pembangunan 1,000 Masjid Rindang
-        </span>
+        <Link to={"/pahala-bantu"}>
+          <span className={style.title}>
+            Pahala Express Bantu Pembangunan 1,000 Masjid Rindang
+          </span>
+        </Link>
         <SingleDonationProgress />
         <Footer />
       </section>

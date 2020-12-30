@@ -14,13 +14,13 @@ export default function MainPage(props) {
       <ButtomNavigation>
         <Switch>
           <Route exact path={"/home"} component={Home} />
-          <Route exact path={"/bantuanku"} component={Bantuanku} />
+          <Route path={"/bantuanku"} component={Bantuanku} />
           <Route
             exact
             path={"/onBoardingTambahBantuan"}
             component={TambahBantuan}
           />
-          <Route exact path={"/update"} component={Update} />
+          <Route path={"/update"} component={Update} />
           <Route exact path={"/profile"} component={Profile} />
           <Route exact path={"/login"} component={Login} />
           <Route exact path={"/"} render={() => <Redirect to={"/home"} />} />

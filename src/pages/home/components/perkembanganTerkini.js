@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import style from "./style.module.scss";
 import LongButton from "../../../components/longButton/longButton";
 
@@ -38,11 +39,16 @@ function Card(props) {
         Wiyongko sejumlah Rp 100.000.000
       </p>
       <footer>
-        <img
-          src={"https://www.ajnn.net/files/images/20191205-fuqara.jpg"}
-          alt={"masjid"}
-        />
-        <span>Pahala Express Bantu Pembangunan 1,000 Masjid Rindang</span>
+        <Link to={"/pahala-bantu"}>
+          <img
+            src={"https://www.ajnn.net/files/images/20191205-fuqara.jpg"}
+            alt={"masjid"}
+          />
+        </Link>
+
+        <Link to={"/pahala-bantu"}>
+          <span>Pahala Express Bantu Pembangunan 1,000 Masjid Rindang</span>
+        </Link>
       </footer>
     </div>
   );

@@ -12,10 +12,10 @@ export default function FooterProfile(props) {
     );
   };
 
-  const RenderMoreSection = ({ Icon, text }) => {
+  const RenderMoreSection = ({ Icon, text, isPressed }) => {
     return (
       <div className={style.moreSection}>
-        <div>
+        <div className={classNames({ [style.press]: isPressed })}>
           <Icon />
           <span>{text}</span>
         </div>
@@ -26,15 +26,22 @@ export default function FooterProfile(props) {
   return (
     <div>
       <RenderLine visible={props.isLogoutVisible} />
-      <RenderMoreSection Icon={IconHelp} text={"Help"} />
+      <RenderMoreSection isPressed={true} Icon={IconHelp} text={"Help"} />
       <RenderLine />
-      <RenderMoreSection Icon={IconPaper} text={"Syarat & Ketentuan"} />
+      <RenderMoreSection
+        isPressed={true}
+        Icon={IconPaper}
+        text={"Syarat & Ketentuan"}
+      />
       <RenderLine />
       {props.isLogoutVisible && (
         <>
-          {" "}
-          <RenderMoreSection Icon={IconLogout} text={"Logout"} />
-          <RenderLine />{" "}
+          <RenderMoreSection
+            isPressed={true}
+            Icon={IconLogout}
+            text={"Logout"}
+          />
+          <RenderLine />
         </>
       )}
       <span>Pahala Express 1.0</span>

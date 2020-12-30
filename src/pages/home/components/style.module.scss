@@ -6,6 +6,10 @@
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .banner {
   position: relative;
   width: 335px;
@@ -48,23 +52,28 @@
     border: 1px solid #dedede;
     margin-right: 20px;
 
-    > img {
-      width: 280px;
-      height: 158px;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      cursor: pointer;
+    > a {
+      > img {
+        width: 280px;
+        height: 158px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        cursor: pointer;
+      }
     }
 
     .cardInfo {
       padding: 12px;
 
-      > span {
-        font-size: 14px;
-        color: #333333;
-        font-weight: bold;
-        letter-spacing: -0.3px;
-        cursor: pointer;
+      > a {
+        text-decoration: none;
+        > span {
+          font-size: 14px;
+          color: #333333;
+          font-weight: bold;
+          letter-spacing: -0.3px;
+          cursor: pointer;
+        }
       }
 
       > footer {
@@ -170,19 +179,22 @@
         display: flex;
         align-items: center;
 
-        > img {
-          width: 70px;
-          height: 44px;
-          border-radius: 5px;
-          margin-right: 10px;
-          cursor: pointer;
-        }
+        > a {
+          > img {
+            width: 70px;
+            height: 44px;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+          }
 
-        > span {
-          color: #ed3833;
-          font-size: 12px;
-          font-weight: bold;
-          cursor: pointer;
+          > span {
+            color: #ed3833;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 15px;
+          }
         }
       }
     }
@@ -229,23 +241,28 @@
     margin-top: 25px;
     width: 335px;
 
-    > img {
-      width: 335px;
-      height: 188px;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
-      cursor: pointer;
+    > a {
+      > img {
+        width: 335px;
+        height: 188px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        cursor: pointer;
+      }
     }
 
     > section {
       padding: 12px;
 
-      .title {
-        color: #333333;
-        font-size: 14px;
-        font-weight: bold;
-        cursor: pointer;
+      > a {
+        .title {
+          color: #333333;
+          font-size: 14px;
+          font-weight: bold;
+          cursor: pointer;
+        }
       }
+
       > footer {
         display: flex;
         justify-content: space-between;

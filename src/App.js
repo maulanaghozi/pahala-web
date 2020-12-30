@@ -10,7 +10,7 @@ function App() {
       <div className={style.container}>
         <Switch>
           <Route exact path={"/register"} component={Register} />
-          <Route exact path={"/pahala"} component={DetailBantuan} />
+          <Route exact path={"/pahala-bantu"} component={DetailBantuan} />
           <Route path={"/"} component={MainPage} />
         </Switch>
       </div>
